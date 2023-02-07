@@ -12,10 +12,20 @@ body{
     position: relative;
     z-index: 2;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 0%);
+   
+}
+
+.navbar{
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display:flex;
+
 }
 #iconeheader{
     width: 7%;
     height: auto;
+    display: flex;
 }
 #container{
     width:400px;
@@ -34,6 +44,12 @@ form {
     background: rgba(255, 255, 255, 0.733);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     
+}
+
+#navbarSupportedContent{
+
+   display: flex;
+
 }
 #container h1{
     width: 50%;
@@ -54,7 +70,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 input[type=submit] {
-    background-color: #57CBAB;
+    background-color: #E7501E;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -64,6 +80,6 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background-color: white;
-    color: #57CBAB;
-    border: 1px solid #57CBAB;
+    color: #E7501E;
+    border: 1px solid #E7501E;
 }
