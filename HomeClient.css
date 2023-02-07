@@ -1,0 +1,56 @@
+.topnav{
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 0%);
+   
+}
+
+.navbar{
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display:flex;
+
+}
+
+#iconeheader{
+    width: 7%;
+    height: auto;
+    display: flex;
+}
+
+#info{
+    background-color: #2EA3F2;
+    height:50px;
+}
+
+#text1{
+color: white;
+font-size: x-large;
+
+}
+
+.btn:hover{
+    background-color: white;
+    color: #115288;
+    border: 1px solid #115288;
+}
+
+
+.btn{
+    background-color: #115288;
+    color: white;
+
+   
+    border: none;
+    cursor: pointer;
+
+}
+
+#container1{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 90%;
+    margin-left:70px;
+}
