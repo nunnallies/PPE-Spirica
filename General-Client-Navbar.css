@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 body{
-    background-color: #6990f2;
+    background-color: #ffffff;
 }
 
 *{
@@ -17,10 +17,10 @@ body{
 :root{
     /* === Colors === */
     --body-color: #E4E9F7;
-    --nav-element-hover-color: #6bff8b;
+    --nav-element-hover-color: #E7511F;
     --primary-color: #6bff8b;
     --nav-element-color: black;
-    --nav-logo-color: #6bff8b;
+    --nav-logo-color: #2EA3F2;
     --toggle-color: #DDD;
     --text-color: #707070;
 
@@ -74,19 +74,18 @@ button{
     background: var(--nav-element-hover-color);
     padding: 10px 15px;
     border-radius: 30px;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 15px;
     transition: .4s;
+    cursor: pointer;
 }
 
 button:hover{
     transform: scale(1.1);
-    cursor: pointer;
 }
 
 .separate-nav-main{
-    border-top: 2px solid #8fabf2;
-    height: 130px;
+    border-top: 2px solid #ededed;
     margin: 0 20px;
 }
