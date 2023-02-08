@@ -44,7 +44,7 @@
 			return;
 			}
       else{
-        $contenu='<p>Bonjour '.$_SESSION['nom'].' '.$_SESSION['prenom'].'!</p>';
+        $contenu='<p id="text2"><FONT face=Didot>Bonjour '.$_SESSION['nom'].' '.$_SESSION['prenom'].' !</p></FONT>';
         echo($contenu);
       }?>
     </div>

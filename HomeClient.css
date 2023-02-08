@@ -30,6 +30,13 @@ font-size: x-large;
 
 }
 
+
+#text2 {
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-left:10px;
+}
+
 .btn:hover{
     background-color: white;
     color: #115288;
@@ -48,9 +55,20 @@ font-size: x-large;
 }
 
 #container1{
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     width: 90%;
     margin-left:70px;
+}
+
+
+.rounded{
+    height:400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
