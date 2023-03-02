@@ -23,7 +23,7 @@
                 <img id="iconeheader" class="logo" src="ressources/img/SPIRICA_logo.png">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="HomeClient.html">Accueil<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="HomeClient.php">Accueil<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active"><a class="nav-link" href="">Aide</a></li>
                 <li class="nav-item active"><a class="nav-link" href=""><font color="E7501E">Nous contacter</font></a></li>
@@ -48,14 +48,14 @@
         echo($contenu);
       }?>
     </div>
-    <div id="container1">
+    <div id="container1" >
       <div class="rounded border border-primary-subtle">
         <center><img src="ressources/img/Folder2B1.png" id="Menu1"></center>
-        <button class="btn" type="button" href="">Mes dossiers</button>
+        <a href="VueDossierClient.php"><button class="btn" type="button" href="">Mes dossiers</button></a>
       </div>
       <div class="rounded border border-primary-subtle" id="Menu2">
         <center><img src="ressources/img/Folder1B1.png"></center>
-        <button class="btn" type="button" href="">Nouveau dossier</button>
+        <a href="Documents-Client.html"><button  class="btn" type="button">Nouveau dossier</button></a>
       </div>
       <div class="rounded border border-primary-subtle" id="Menu3">
         <center><img src="ressources/img/MessagesB1.png"></center>
