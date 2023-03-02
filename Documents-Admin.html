@@ -6,7 +6,7 @@
     <title>SpeedContracts/Acceuil</title>
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="Documents-Client.css" />
+    <link rel="stylesheet" href="Documents-Admin.css" />
     <link rel="stylesheet" href="Navbar.css" />
     <link rel="stylesheet" href="Footer.css" />
     <link
@@ -15,7 +15,7 @@
     />
 
     <!-- JS Link -->
-    <script src="Documents-Client.js"></script>
+    <script src="Documents-Admin.js"></script>
 
     <!-- ICON Link -->
     <script
@@ -68,49 +68,57 @@
     <div class="separate-nav-main"></div>
 
     <main>
-      <div class="side-selector-documents">
-        <div class="wrapper Doc1">
-          <header>
-            Sélectionner
-            <span class="element-title-document">Liasses Fiscales</span>
-          </header>
-          <form action="#">
-            <input type="file" class="file-input" hidden />
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <p>Charger un fichier</p>
-          </form>
-          <section class="progress-area"></section>
-          <section class="uploaded-area"></section>
+      <div class="Documents_client_table">
+        <div class="table__header">
+          <h2>Documents du Client</h2>
         </div>
-
-        <div class="wrapper Doc2">
-          <header>
-            Sélectionner <span class="element-title-document">KBIS</span>
-          </header>
-          <form action="#">
-            <input type="file" class="file-input" hidden />
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <p>Charger un fichier</p>
-          </form>
-          <section class="progress-area"></section>
-          <section class="uploaded-area"></section>
-        </div>
-
-        <div class="wrapper Doc3">
-          <header>
-            Sélectionner <span class="element-title-document">Statut</span>
-          </header>
-          <form action="#">
-            <input type="file" class="file-input" hidden />
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <p>Charger un fichier</p>
-          </form>
-          <section class="progress-area"></section>
-          <section class="uploaded-area"></section>
+        <div class="table__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Titre du Document</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Aperçu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Liasses_Fiscales_BouyguesTelecom</td>
+                <td>17 Décembre, 2022</td>
+                <td>
+                  <p class="status envoyes">Envoyés</p>
+                </td>
+                <td><i class="fa-solid fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>KBIS_BouyguesTelecom</td>
+                <td>27 Aout, 2023</td>
+                <td>
+                  <p class="status envoyes">Envoyés</p>
+                </td>
+                <td><i class="fa-solid fa-eye"></i></td>
+              </tr>
+              <tr>
+                <td>Statut_BouyguesTelecom</td>
+                <td>- - - - - - - - - - - -</td>
+                <td>
+                  <p class="status en-cours">En cours</p>
+                </td>
+                <td><i class="fa-solid fa-eye"></i></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div class="side-selected-document-infos"></div>
+      <div class="doc_selectionne">
+        <div class="titre">
+          <h2>Liasses Fiscales <span>Bouygues Telecom</span></h2>
+        </div>
+        <div class="Vue_Doc"></div>
+      </div>
     </main>
+
     <footer>
       <div class="container">
         <div class="row">
