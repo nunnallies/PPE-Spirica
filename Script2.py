@@ -3,6 +3,7 @@ import pytesseract
 from pdf2image import convert_from_path
 
 
+
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
 pdf_path = 'ressources/docs/STATUT/ALSTOM APTIS - Statuts mis à jour.pdf'
