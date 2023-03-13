@@ -1,11 +1,8 @@
 import PyPDF2
 
-pdf_file = open('Users/Lydia/LOREAL.pdf', 'rb')
+pdf_file = open('ressources/docs/Copie de Matrice NAF-FATCA 2014.pdf', 'rb')
 
-if pdf_file :
-    print("Doc ouvert")
-else :
-    print("doc pas ouvert")
+
 
 pdf_reader = PyPDF2.PdfReader(pdf_file)
 pdf_page_count = len(pdf_reader.pages)
@@ -17,10 +14,9 @@ for page in range(pdf_page_count):
     text += page_obj.extract_text()
 
 print(text)
-siren = ''
+"""siren = ''
 # Chercher le numéro SIREN
 for line in text.split('\n'):
     if 'SIREN' in line:
-        siren = line.split('SIREN')[1].strip().replace(' ', '')
+        siren = line.split('SIREN')[1].strip().replace(' ', '')"""
 
-print(siren)
