@@ -10,6 +10,8 @@ def ExtractSiren(pdf_path):
     pdf_file = open(pdf_path, 'rb')
     pdf_reader = PyPDF2.PdfReader(pdf_file)
 
+    pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
+
     # Extraire le texte du PDF
     pdf_page_count = len(pdf_reader.pages)
     text = ''
