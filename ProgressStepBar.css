@@ -1,0 +1,104 @@
+.container{
+  width: 700px; 
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container header{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #6bff8b;
+  background: #6bff8b;
+  color: #000;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -135px;
+  height: 3px;
+  width: 135px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #6bff8b;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #6bff8b;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
