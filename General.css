@@ -30,7 +30,8 @@ footer{
 }
 
 .dev-section{
-    position: flex;
+    display: block;
+    justify-content: center;
     min-height: 12vh;
     width: 80%;;
     border-radius: 15px;
@@ -39,12 +40,3 @@ footer{
     z-index: 2;
     padding: 20px;
   }
-  
-  .dev-section .titre-section{
-    display: inline-block;
-    width: 60%;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    background-color: bisque;
-  } 
