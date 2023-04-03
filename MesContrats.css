@@ -72,11 +72,18 @@
 }
 .titre_display_infos_contrat{
   justify-content: center;
-  display: flex;
-
-}.annonce_infos_contrat {
   text-align: center;
   display: flex;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 15px;
+
+}.annonce_infos_contrat {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
