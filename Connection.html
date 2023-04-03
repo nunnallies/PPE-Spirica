@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Inclure jQuery depuis Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Appeler votre fichier JavaScript contenant votre code -->
+    <script src="Connection.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d2042957a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Connection.css" />
+    <title>Connection à la plateforme</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div
+        class="container_left"
+        style="background-image: url(Img/ImageConnection.jpg)"
+      >
+        <h1>Heureux de vous revoir !</h1>
+      </div>
+      <div class="container_right">
+        <div class="form_header">
+          <h2>Se Connecter</h2>
+          <div class="text_intro">
+            Ceci est une plateforme qui va vous permettre de gérer vos contrat
+            de manière simple et optimisée. Le Design a été conçu par des
+            professionnels ce qui garantit sa facilité d'utilisation et la
+            qualité de son design.
+          </div>
+        </div>
+        <div class="form_body">
+          <div class="input_formulaire">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+            />
+          </div>
+          <div class="input_formulaire">
+            <label for="password">Mot de Passe</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="********"
+            />
+            <span class="icon show-pass">
+              <i class="fa-regular fa-eye"></i>
+            </span>
+          </div>
+          <script src="Connection.js"></script>
+          <div class="input_formulaire more_events">
+            <div class="remember_container">
+              <label>
+                <input id="remember-me" type="checkbox" name="remember_me" />
+                Se souvenir de moi.
+              </label>
+            </div>
+            <div class="forget_container">
+              <a class="forget-link" href="#"> Mot de passe oublié ?</a>
+            </div>
+          </div>
+          <button
+            class="btn_submit"
+            type="submit"
+            onclick="window.location.href='MesContrats.html'"
+          >
+            Se Connecter
+          </button>
+        </div>
+        <div class="form_footer">
+          <p>
+            Vous êtes nouveau sur la plateforme ?
+            <a href="" class="form-link">Créer un compte</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

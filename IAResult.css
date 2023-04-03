@@ -1,0 +1,99 @@
+.first_result .progress{
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+    padding: 5em;
+}
+
+.first_result .progress .small{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.first_result .progress .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 2em 0;
+}
+
+.first_result .progress .completion{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.first_result .progress .completion .Complete{
+    font-size: 70%;
+    font-weight: 400;
+}
+
+.first_result .progress .completion .done{
+    font-size: 24px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.first_result .progress .remaining{
+    font-size: 12px;
+    color: blueviolet;
+}
+
+.first_result .progress .bar{
+    position: relative;
+    width: 100%;
+    height: 13px;
+    background-color: aquamarine;
+    border-radius: 7px;
+}
+
+.first_result .progress .bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 13px;
+    background: linear-gradient(blue, green);
+    border-radius: 7px;
+}
+
+.show .progress{
+    display: block;
+}
+
+
+.first_result .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+.first_result button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-transform: uppercase;
+    padding: 0.875em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    width: auto;
+    padding-inline: 2em;
+    box-shadow: inset 0 0 0 1px transparent;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first_result button:hover {
+    opacity: 0.8;
+    box-shadow: inset 0 0 0 1px rgb(75, 75, 75);
+}
+
+.first_result button[type="submit"] {
+    background: #2f2d46;
+    color: white;
+    font-weight: 600;
+}

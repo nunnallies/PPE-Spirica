@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="FormulaireContract.css" />
     <link rel="stylesheet" href="UploadedFiles.css" />
     <link rel="stylesheet" href="ProgressBar.css" />
+    <link rel="stylesheet" href="IAResult.css" />
     <!-- Boxicons CDN Link -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -30,7 +31,7 @@
       <section class="sidebar">
         <div class="logo-details">
           <i class="bx bxl-c-plus-plus icon"></i>
-          <div class="logo_name">CodingLab</div>
+          <div class="logo_name">MyContract</div>
         </div>
         <ul class="nav-list">
           <li>
@@ -76,7 +77,11 @@
                 <div class="job">Product Owner</div>
               </div>
               <div class="icon">
-                <i class="bx bx-log-out" id="log_out"></i>
+                <i
+                  class="bx bx-log-out"
+                  id="log_out"
+                  onclick="window.location.href='Connection.html'"
+                ></i>
               </div>
             </div>
           </li>
@@ -196,8 +201,10 @@
                     </div>
                   </fieldset>
                   <div class="buttons">
-                    <button type="button">Cancel</button>
-                    <button type="submit" class="firstNext next">Next</button>
+                    <button type="button">Annuler</button>
+                    <button type="submit" class="firstNext next">
+                      Suivant
+                    </button>
                   </div>
                 </div>
               </form>
@@ -250,26 +257,59 @@
                   </div>
                 </div>
                 <div class="display_file_section"></div>
+                <script src="UploadedFiles.js"></script>
               </div>
-              <script src="UploadedFiles.js"></script>
-              <button type="button" class="prev-1 prev">Prev</button>
-              <button type="submit" class="next-1 next">Next</button>
+              <div class="Boutons_bottom">
+                <button type="button" class="prev-1 prev">
+                  retour au formulaire
+                </button>
+                <button type="submit" class="next-1 next">
+                  Analyser les fichiers
+                </button>
+              </div>
             </section>
 
             <section class="section-content first_result page">
               <h2 class="title_section">RESULTAT IA : 1er ANALYSE</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                neque justo, consequat non fermentum ac, tempor eu turpis. Proin
-                nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
-                in dapibus lorem. Suspendisse vitae velit ac ante consequat
-                placerat ut sed eros. Nullam porttitor mattis mi, id fringilla
-                ex consequat eu. Praesent pulvinar tincidunt leo et condimentum.
-                Maecenas volutpat turpis at felis egestas malesuada. Phasellus
-                sem odio, venenatis at ex a, lacinia suscipit orci.
+                Vous pourrez trouver ci-dessous le type de personne morale
+                qu'est l'entreprise étudiée. Via notre IA, nous avons pu en
+                effet analyser les liasses fiscales, le KBIS et le statut que
+                vous nous avez transmis.
               </p>
-              <button type="button" class="prev-2 prev">Prev</button>
-              <button type="submit" class="next-2 next">Next</button>
+              <button class="progress_result_button">Download</button>
+              <div class="progress">
+                <div class="top">
+                  <div class="small">Evolution du Pourcentage</div>
+                  <div class="info">
+                    <p class="completion">
+                      <span class="percentage">0%</span>
+                      <span class="Complete">Complet</span>
+                      <span class="done"></span>
+                    </p>
+                    <p class="remaining">
+                      <span class="seconds">0</span> secs remaining
+                    </p>
+                  </div>
+                </div>
+                <div class="bar">
+                  <span class="loarder"></span>
+                </div>
+              </div>
+              <script src="IAResult.js"></script>
+              <p>
+                Maintenant que le type de personne morale est connue, vous
+                pouvez alors rajouter les nouveaux fichiers PDF en cliquant sur
+                le boutons ci-dessous et ajouter les autres fichiers.
+              </p>
+              <div class="Boutons_bottom">
+                <button type="button" class="prev-1 prev">
+                  Changer les fichiers PDF
+                </button>
+                <button type="submit" class="next-1 next">
+                  Ajouter les fichiers restant
+                </button>
+              </div>
             </section>
 
             <section class="section-content other_files page">
