@@ -43,17 +43,37 @@ $(".step05").click(function () {
 // CLICK ON BUTTONS PREV / NEXT
 
 nextBtnFirst.addEventListener("click", function (event) {
+  $(".step02").click();
+});
+
+nextBtnSec.addEventListener("click", function (event) {
   $(".step03").click();
 });
 
-nextBtnSec.addEventListener("click", function (event) {});
+nextBtnThird.addEventListener("click", function (event) {
+  $(".step04").click();
+});
 
-nextBtnThird.addEventListener("click", function (event) {});
+nextBtnFourth.addEventListener("click", function (event) {
+  $(".step05").click();
+});
 
-submitBtn.addEventListener("click", function () {});
+submitBtn.addEventListener("click", function () {
+  $(".step03").click();
+});
 
-prevBtnSec.addEventListener("click", function (event) {});
+prevBtnSec.addEventListener("click", function (event) {
+  $(".step01").click();
+});
 
-prevBtnThird.addEventListener("click", function (event) {});
+prevBtnThird.addEventListener("click", function (event) {
+  $(".step02").click();
+});
 
-prevBtnFourth.addEventListener("click", function (event) {});
+prevBtnFourth.addEventListener("click", function (event) {
+  $(".step03").click();
+});
+
+prevBtnFifth.addEventListener("click", function (event) {
+  $(".step03").click();
+});

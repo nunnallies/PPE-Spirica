@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="UploadedFiles.css" />
     <link rel="stylesheet" href="ProgressBar.css" />
     <link rel="stylesheet" href="IAResult.css" />
+    <link rel="stylesheet" href="Test .css" />
     <!-- Boxicons CDN Link -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -87,6 +88,7 @@
           </li>
         </ul>
       </section>
+      
       <section class="dev-section">
         <div class="process-wrapper">
           <div id="progress-bar-container">
@@ -201,7 +203,8 @@
                     </div>
                   </fieldset>
                   <div class="buttons">
-                    <button type="button">Annuler</button>
+                    <button type="button" 
+                    onclick="window.location.href='MesContrats.html'">Annuler</button>
                     <button type="submit" class="firstNext next">
                       Suivant
                     </button>
@@ -211,8 +214,7 @@
             </section>
 
             <section class="section-content first_files page">
-              <h2 class="title_section">DOSSIERS CATEGORIE ENTREPRISE</h2>
-              <div class="dev_section">
+              <h2 class="title_section">DOSSIERS CATEGORIE ENTREPRISE</h2><div class="dev_section">
                 <div class="uploaded_file_section">
                   <div class="UploadFile_container">
                     <div class="title_file_container">
@@ -271,7 +273,7 @@
 
             <section class="section-content first_result page">
               <h2 class="title_section">RESULTAT IA : 1er ANALYSE</h2>
-              <p>
+              <p class="description_section">
                 Vous pourrez trouver ci-dessous le type de personne morale
                 qu'est l'entreprise étudiée. Via notre IA, nous avons pu en
                 effet analyser les liasses fiscales, le KBIS et le statut que
@@ -283,16 +285,16 @@
                 </p>
                 <p>RESULTAT</p>
               </div>
-              <p>
+              <p class="annonce_section_suiv">
                 Maintenant que le type de personne morale est connue, vous
                 pouvez alors rajouter les nouveaux fichiers PDF en cliquant sur
                 le boutons ci-dessous et ajouter les autres fichiers.
               </p>
               <div class="Boutons_bottom">
-                <button type="button" class="prev-1 prev">
+                <button type="button" class="prev-2 prev">
                   Changer les fichiers PDF
                 </button>
-                <button type="submit" class="next-1 next">
+                <button type="submit" class="next-2 next">
                   Ajouter les fichiers restant
                 </button>
               </div>
@@ -332,6 +334,7 @@
           </div>
         </div>
       </section>
+    </section>
     </section>
     <footer>
       <div class="container">

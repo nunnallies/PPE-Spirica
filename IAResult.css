@@ -49,3 +49,13 @@
     color: white;
     font-weight: 600;
 }
+
+.description_section{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.annonce_section_suiv{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}

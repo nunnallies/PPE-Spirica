@@ -56,11 +56,10 @@ a:hover {
     display: flex;
     background-size: cover;
     background-position: center;
-    border-radius: 1em 0 0 1em;
+    border-radius: 0 1em 1em 0;
 }
 
 .container_left h1 {
-    justify-content: flex-end;
     display: flex;
     align-items: flex-end;
     font-size: 60px;
@@ -83,16 +82,15 @@ a:hover {
     font-size: 14px;
     color: #bbb;
     padding-top: 15px;
-    margin: 20px 0 0;
 }
 
 .form_body .input_formulaire {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 }
 .form_body .input_formulaire label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bolder;
@@ -100,7 +98,7 @@ a:hover {
 
 .form_body .input_bouton label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 14px;
 }
 
@@ -137,7 +135,7 @@ a:hover {
   }
 
 .form_body .more_events{
-    padding-top: 15px;
+    padding-top: 8px;
     display: flex;
     justify-content: space-between;
 }
@@ -173,7 +171,7 @@ a:hover {
 
 .btn_submit {
     width: 200px;
-    padding: 12px 1rem;
+    padding: 10px 1rem;
     background-color: #6bff8b;
     border: unset;
     border-radius: 1em;
@@ -182,7 +180,7 @@ a:hover {
     cursor: pointer;
     transition: .5s;
     margin-left: 125px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .btn_submit:hover {
     transform: scale(1.05);
@@ -200,4 +198,16 @@ a:hover {
 }
 .form_footer .form-link {
     vertical-align: middle;
+}
+
+
+.names_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_name{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
 }

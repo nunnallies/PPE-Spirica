@@ -17,12 +17,14 @@
   transform: scale(1.05);
   transition: .2s;
   color: #6bff8b;
+  border-color: #6bff8b;
 }
 
 .formulaire input{
-  background-color: #11101D;
-  color: #ffffff;
+  background-color: #E4E9F7;
+  color: #11101D;
   transition: .2s;
+  border: solid #11101D;
 }
 
 .formulaire .textbox{

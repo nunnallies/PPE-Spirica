@@ -15,20 +15,14 @@
       src="https://kit.fontawesome.com/d2042957a0.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="Connection.css" />
+    <link rel="stylesheet" href="CreerCompte.css" />
     <title>Connection à la plateforme</title>
   </head>
   <body>
     <div class="main_container">
-      <div
-        class="container_left"
-        style="background-image: url(Img/ImageConnection.jpg)"
-      >
-        <h1>Encore vous !</h1>
-      </div>
       <div class="container_right">
         <div class="form_header">
-          <h2>Se Connecter</h2>
+          <h2>Créer un compte</h2>
           <div class="text_intro">
             Ceci est une plateforme qui va vous permettre de gérer vos contrat
             de manière simple et optimisée. Le Design a été conçu par des
@@ -37,6 +31,21 @@
           </div>
         </div>
         <div class="form_body">
+          <div class="names_container">
+            <div class="input_formulaire block_name">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Nom" />
+            </div>
+            <div class="input_formulaire block_name">
+              <label for="prenom">Prénom</label>
+              <input
+                type="text"
+                id="^renom"
+                name="prenom"
+                placeholder="Prenom"
+              />
+            </div>
+          </div>
           <div class="input_formulaire">
             <label for="email">Email</label>
             <input
@@ -66,24 +75,27 @@
                 Se souvenir de moi.
               </label>
             </div>
-            <div class="forget_container">
-              <a class="forget-link" href="#"> Mot de passe oublié ?</a>
-            </div>
           </div>
           <button
             class="btn_submit"
             type="submit"
             onclick="window.location.href='MesContrats.html'"
           >
-            Se Connecter
+            Créer un compte
           </button>
         </div>
         <div class="form_footer">
           <p>
-            Vous êtes nouveau sur la plateforme ?
-            <a href="CreerCompte.html" class="form-link">Créer un compte</a>
+            Vous avez déjà un compte ?
+            <a href="Connection.html" class="form-link">Se connecter</a>
           </p>
         </div>
+      </div>
+      <div
+        class="container_left"
+        style="background-image: url(Img/ImageCreationCompte.jpg)"
+      >
+        <h1>Bienvenue !</h1>
       </div>
     </div>
   </body>
