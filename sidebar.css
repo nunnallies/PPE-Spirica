@@ -33,18 +33,21 @@
   z-index: 99;
   transition: all 0.5s ease;
 }
+
 .sidebar .logo-details{
-  padding-left: 8%;
+  padding-top: 7px;
+  padding-left: 12%;
   height: 60px;
   display: flex;
   align-items: center;
   color: #6bff8b;
 }
-.sidebar .logo-details .icon{
+
+/* .sidebar .logo-details .icon{
   opacity: 1;
   transition: all 0.5s ease;
   color: #6bff8b;
-}
+} */
 .sidebar .logo-details .logo_name{
   font-size: 20px;
   font-weight: 600;

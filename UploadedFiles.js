@@ -1,5 +1,6 @@
 // - - - KBIS UPLOAD CONTAINER FILE - - -
 
+// Sélection des éléments HTML correspondant à l'input de fichier, la liste des fichiers et le nombre de fichiers sélectionnés pour le conteneur liasses_fiscales
 let fileInput_liasses_fiscales = document.getElementById(
   "file-input-liasses_fiscales"
 );
@@ -10,10 +11,14 @@ let numOfFiles_liasses_fiscales = document.getElementById(
   "num-of-files-liasses_fiscales"
 );
 
+// Ecouteur d'événement qui se déclenche lorsqu'un fichier est sélectionné pour le conteneur liasses_fiscales
 fileInput_liasses_fiscales.addEventListener("change", () => {
+  // Efface la liste précédemment affichée
   fileList_liasses_fiscales.innerHTML = "";
+  // Met à jour l'affichage du nombre de fichiers sélectionnés
   numOfFiles_liasses_fiscales.textContent = `${fileInput_liasses_fiscales.files.length} Files Selected`;
 
+  // Pour chaque fichier sélectionné, crée un objet FileReader et affiche le nom et la taille du fichier dans la liste correspondante
   for (i of fileInput_liasses_fiscales.files) {
     let reader = new FileReader();
     let listItem = document.createElement("li");
@@ -27,49 +32,25 @@ fileInput_liasses_fiscales.addEventListener("change", () => {
     fileList_liasses_fiscales.appendChild(listItem);
   }
 
-  const file = fileInput_liasses_fiscales.files[0];
-  const fileReader = new FileReader();
-
-  fileReader.onload = function () {
-    const typedArray = new Uint8Array(this.result);
-    const loadingTask = pdfjsLib.getDocument(typedArray);
-
-    loadingTask.promise.then(function (pdf) {
-      for (let i = 1; i <= pdf.numPages; i++) {
-        pdf.getPage(i).then(function (page) {
-          const canvas = document.createElement("canvas");
-          pdfContainer.appendChild(canvas);
-          canvas.style.display = "block";
-          canvas.style.margin = "0 auto";
-
-          const viewport = page.getViewport({ scale: 1.5 });
-          canvas.width = viewport.width;
-          canvas.height = viewport.height;
-
-          const renderContext = {
-            canvasContext: canvas.getContext("2d"),
-            viewport: viewport,
-          };
-
-          page.render(renderContext);
-        });
-      }
-    });
-  };
-
+  // Lit le contenu du fichier en vue de son traitement ultérieur
   fileReader.readAsArrayBuffer(file);
 });
 
-// - - - KBIS UPLOAD CONTAINER FILE - - -
+// ________________ KBIS UPLOAD CONTAINER FILE ____________________
 
+// Sélection des éléments HTML correspondant à l'input de fichier, la liste des fichiers et le nombre de fichiers sélectionnés pour le conteneur KBIS
 let fileInput_KBIS = document.getElementById("file-input-KBIS");
 let fileList_KBIS = document.getElementById("files-list-KBIS");
 let numOfFiles_KBIS = document.getElementById("num-of-files-KBIS");
 
+// Ecouteur d'événement qui se déclenche lorsqu'un fichier est sélectionné pour le conteneur KBIS
 fileInput_KBIS.addEventListener("change", () => {
+  // Efface la liste précédemment affichée
   fileList_KBIS.innerHTML = "";
+  // Met à jour l'affichage du nombre de fichiers sélectionnés
   numOfFiles_KBIS.textContent = `${fileInput_KBIS.files.length} Files Selected`;
 
+  // Pour chaque fichier sélectionné, crée un objet FileReader et affiche le nom et la taille du fichier dans la liste correspondante
   for (i of fileInput_KBIS.files) {
     let reader = new FileReader();
     let listItem = document.createElement("li");
@@ -80,20 +61,27 @@ fileInput_KBIS.addEventListener("change", () => {
       fileSize = (fileSize / 1024).toFixed(1);
       listItem.innerHTML = `<p>${fileName}</p><p>${fileSize}MB</p>`;
     }
+
+    // Lit le contenu du fichier en vue de son traitement ultérieur
     fileList_KBIS.appendChild(listItem);
   }
 });
 
-// - - - KBIS UPLOAD CONTAINER FILE - - -
+// __________________ STATUT UPLOAD CONTAINER FILE ____________________
 
+// Sélection des éléments HTML correspondant à l'input de fichier, la liste des fichiers et le nombre de fichiers sélectionnés pour le conteneur KBIS
 let fileInput_Statut = document.getElementById("file-input-Statut");
 let fileList_Statut = document.getElementById("files-list-Statut");
 let numOfFiles_Statut = document.getElementById("num-of-files-Statut");
 
+// Ecouteur d'événement qui se déclenche lorsqu'un fichier est sélectionné pour le conteneur KBIS
 fileInput_Statut.addEventListener("change", () => {
+  // Efface la liste précédemment affichée
   fileList_Statut.innerHTML = "";
+  // Met à jour l'affichage du nombre de fichiers sélectionnés
   numOfFiles_Statut.textContent = `${fileInput_Statut.files.length} Files Selected`;
 
+  // Pour chaque fichier sélectionné, crée un objet FileReader et affiche le nom et la taille du fichier dans la liste correspondante
   for (i of fileInput_Statut.files) {
     let reader = new FileReader();
     let listItem = document.createElement("li");
@@ -104,45 +92,8 @@ fileInput_Statut.addEventListener("change", () => {
       fileSize = (fileSize / 1024).toFixed(1);
       listItem.innerHTML = `<p>${fileName}</p><p>${fileSize}MB</p>`;
     }
+
+    // Lit le contenu du fichier en vue de son traitement ultérieur
     fileList_Statut.appendChild(listItem);
   }
-});
-
-// - - - DISPLAY PDF CONTAINER - -
-
-const pdfContainer = document.getElementById("display_file_section");
-const fileInput = document.getElementById("file-input-liasses_fiscales");
-
-fileInput.addEventListener("change", function () {
-  const file = fileInput.files[0];
-  const fileReader = new FileReader();
-
-  fileReader.onload = function () {
-    const typedArray = new Uint8Array(this.result);
-    const loadingTask = pdfjsLib.getDocument(typedArray);
-
-    loadingTask.promise.then(function (pdf) {
-      for (let i = 1; i <= pdf.numPages; i++) {
-        pdf.getPage(i).then(function (page) {
-          const canvas = document.createElement("canvas");
-          pdfContainer.appendChild(canvas);
-          canvas.style.display = "block";
-          canvas.style.margin = "0 auto";
-
-          const viewport = page.getViewport({ scale: 1.5 });
-          canvas.width = viewport.width;
-          canvas.height = viewport.height;
-
-          const renderContext = {
-            canvasContext: canvas.getContext("2d"),
-            viewport: viewport,
-          };
-
-          page.render(renderContext);
-        });
-      }
-    });
-  };
-
-  fileReader.readAsArrayBuffer(file);
 });
