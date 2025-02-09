@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js"></script>
+    <style>
+      .pdf-container {
+        border: 1px solid black;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="upload1">Uploader PDF 1:</label>
+      <input type="file" id="upload1" />
+      <button type="button" id="eye1">
+        <i class="fa-solid fa-eye"></i>
+      </button>
+    </div>
+    <div>
+      <label for="upload2">Uploader PDF 2:</label>
+      <input type="file" id="upload2" />
+      <button type="button" id="eye2">
+        <i class="fa-solid fa-eye"></i>
+      </button>
+    </div>
+    <div>
+      <label for="upload3">Uploader PDF 3:</label>
+      <input type="file" id="upload3" />
+      <button type="button" id="eye3">
+        <i class="fa-solid fa-eye"></i>
+      </button>
+    </div>
+    <div>
+      <canvas id="pdf-viewer"></canvas>
+    </div>
+  </body>
+</html>
